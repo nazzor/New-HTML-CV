@@ -5,7 +5,7 @@
     <title>Krenar Miftari CV</title>
 </head>
 <body>
-    <table border="1" width="600" height="700">
+    <table bgcolor="fafafa" border="1" width="600" height="700">
         <tr>
             <td width="200" height="120" align="center">
                 <img src="user.png" width="150">
@@ -79,5 +79,81 @@
             </td>
         </tr>
     </table>
+
+    <br><br><br>
+
+    
+
+        <fieldset>
+
+            <strong>Share your information here!</strong> (All information given below is secret and not saved anywhere)
+
+            <hr>
+
+            <form>
+                <br>
+                <input type="text" name="Name" placeholder="First and Last Name (required)" minlength="5" maxlength="35" size="50" required>
+                <input type="image" src="user.png" height="40" style="margin-bottom: -10;">
+
+                <br><br><br><hr>
+
+                <label>Please select your gender here:</label>
+                <input type="radio" name="gender" id="male" value="Male" required>
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="gender">Female</label>
+
+                <br><br><br><hr>
+
+                <input type="email" name="email" placeholder="Please enter your email (required)" size="30" required>
+                <input type="url" name="website" placeholder="Your webside (only if you have one)" size="30">
+
+                <br><br><br><hr>
+
+                <label for="volume">Please RATE your knowledge on Information Technology here:</label>
+                <input type="range" id="volume" min="0" max="100" value="50" required>
+
+                <br><br><br><hr>
+
+                <label>Please select your education (Required):</label>
+                <br><br>
+                <input type="checkbox" name="education" id="bsc" value="BSc" checked>
+                <label for="bsc">Bachelor</label>
+                <input type="checkbox" name="education" id="msc" value="MSc">
+                <label for="msc">Master</label>
+                <input type="checkbox" name="education" id="phd" value="Phd">
+                <label for="phd">Phd</label>
+
+                <br><br><br><hr>
+
+                <label>Please choose what you do best:</label>
+                <br><br>
+                <input list="Fav job" name="Fav job">
+    
+                <datalist id="Fav job">
+                    <option value="">Please choose what you do best</option>
+                    <option value="Fron End Dev">Fron End Dev</option>
+                    <option value="Back End Dev">Back End Dev</option>
+                    <option value="Full Stack Dev">Full Stack Dev</option>
+                </datalist>
+
+                <br><br><br><hr>
+
+                <label>Your Message to us:</label>
+                <br>
+                <textarea name="Message" id="" cols="25" rows="7" placeholder="Write here anything including what you do best at your job, ask us a question or anything else."></textarea>
+            
+                <br><br><br><hr>
+
+                <label>Upload your CV here:</label>
+                <input type="file">
+
+                <br><br><br>
+
+                <button type="submit">Submit</button>
+
+            </form>
+    
+        </fieldset>
 </body>
 </html>
